@@ -1,0 +1,33 @@
+module main(clock, funcao, reset, parar, pausar, contar, saida0, saida1, saida2, saida3);
+	
+	input clock;
+	input funcao;
+	input reset;
+	input parar;
+	input pausar;
+	input contar;
+	
+	output [3:0] saida0;
+	output [3:0] saida1;
+	output [3:0] saida2;
+	output [3:0] saida3;
+	
+	
+   parameter CONF = 4'b0000, CRON = 4'b0001, TEMP = 4'b0010, PARAR = 4'b0011;
+	
+	always@(posedge clock or posedge parar or posedge pausar or posedge reset or posedge contar) begin
+	
+	
+		
+	end
+	
+	
+	
+	
+	
+	
+	
+	
+	
+endmodule
+	
